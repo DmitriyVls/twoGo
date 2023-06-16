@@ -1,0 +1,22 @@
+.form__fiekdset {
+  margin: 0;
+  padding: 0 20;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border: none;
+}
+
+.form__legend {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: $color-333333;
+  padding-bottom: 20px;
+}
+
+.form__range {
+  max-width: 280px;
+  margin: 0 auto;
+}
