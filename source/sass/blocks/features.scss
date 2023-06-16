@@ -1,0 +1,109 @@
+.features__wrapper {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.features__list {
+  max-width: 280px;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.features__item {
+  padding-bottom: 32px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.features__picture {
+  display: flex;
+  justify-content: center;
+}
+
+.features__title {
+  margin: 0;
+
+  &::before {
+    content:" Преимущества";
+  }
+}
+
+.features__bold-text {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.features__text {
+  padding-top: 4px;
+  margin: 0;
+}
+
+//TABLET
+@media (min-width:768px) {
+  .features__list {
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    max-width: 339px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
+  }
+
+  .features__picture {
+    display: block;
+    padding-right: 20px;
+  }
+
+  .features__bold-text {
+    text-align: left;
+  }
+
+  .features__text {
+    font-size: 16px;
+    text-align: left;
+    max-width: 267px;
+  }
+}
+//TABLET
+
+//DESKTOP
+@media (min-width:1440px) {
+  .features__list {
+    max-width: calc(1440px - 80px);
+    justify-content: start;
+    gap: 0 30px;
+  }
+
+  .features__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features__picture {
+    padding: 0;
+  }
+
+  .features__bold-text {
+    text-align: center;
+  }
+
+  .features__text {
+    text-align: center;
+    max-width: 317px;
+  }
+}
+//DESCTOP

@@ -1,0 +1,69 @@
+.user-list {
+  display: flex;
+  align-items: center;
+}
+
+.user-list__link  {
+  padding: 23px 30px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  outline:none;
+
+    &:hover {
+      color: $color-7859cf;
+    }
+
+    &:focus-visible {
+      color: $color-7859cf;
+    }
+
+
+
+    &:active {
+      color: $color-7859cf;
+      background-color: $color-f0ebff;
+    }
+}
+
+.user-list__login {
+  background-image: url("/img/user.svg");
+}
+
+.user-list__basket {
+  background-image: url("/img/basket.svg");
+}
+
+.user-list__text {
+  display: none;
+}
+
+//TABLET
+@media (min-width:768px) {
+  .user-list {
+    padding-right: 20px;
+  }
+  .user-list__link {
+    padding: 33px 30px;
+
+  }
+}
+//TABLET
+
+
+//DESKTOP
+@media (min-width:1440px) {
+  .user-list {
+    padding-right: 40px;
+  }
+
+  .user-list__link  {
+    background-position: 0 50%;
+}
+  .user-list__text {
+    display: inline-block;
+    @include link;
+    color: $color-333333;
+    text-transform: uppercase;
+  }
+}
+//DESKTOP

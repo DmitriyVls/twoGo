@@ -1,0 +1,95 @@
+.burger {
+  padding-right: 20px;
+}
+
+.burger__link-button {
+  display: block;
+  position: relative;
+  transition: 0.5s;
+  width: 60px;
+  height: 60px;
+
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    min-height: 1.5px;
+    left: 25px;
+    background-color: $color-d9d9d9;
+    transition: 0.5s;
+  }
+
+  &::before {
+    top: 23px;
+  }
+
+  &::after {
+    bottom: 23px;
+    height: 1.5px;
+
+  }
+
+  &:first-child {
+    border-top: 1px solid $color-f0ebff;
+  }
+
+  &:hover {
+    color: $color-7859cf;
+  }
+
+  &:focus-visible {
+    color: $color-7859cf;
+  }
+
+
+
+  &:active {
+    color: $color-7859cf;
+    background-color: $color-f0ebff;
+  }
+}
+
+.burger__line {
+  position: absolute;
+  width: 16px;
+  top: 50%;
+  left: 25px;
+  height: 1.5px;
+  background-color: $color-d9d9d9;
+  transition: 0.5s;
+
+}
+
+.burger__active {
+  .burger__line {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    top: 30px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    bottom: 29px;
+    left: 25px;
+
+  }
+}
+
+.burger--no-js {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (min-width:768px) {
+  .burger {
+    display: none;
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,98 @@
+.promo__description {
+  padding-top: 10px;
+
+}
+
+.promo__picture {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.promo__main-title {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  &::before {
+    content: "Новинка!";
+  }
+}
+
+.promo__text {
+  padding: 0 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.promo__order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo__button-wrapper {
+  padding-left: 20px;
+}
+
+.price__actual {
+  padding-left: 8px;
+}
+
+@media (min-width:768px) {
+  .promo__description {
+    order: 1;
+    padding-top: 60px;
+  }
+
+  .promo__text {
+    max-width: 608px;
+    margin: 0 auto;
+  }
+
+  .promo__main-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .promo__picture {
+    padding-top: 20px;
+  }
+
+}
+
+@media (min-width:1440px) {
+  .promo__info {
+    text-align: left;
+    align-items: stretch;
+  }
+
+  .promo__description {
+    padding-top: 200px;
+  }
+
+  .promo__picture {
+    width: auto;
+    padding-top: 0;
+    padding-right: 30px;
+  }
+
+  .promo__main-title {
+    align-items: flex-start;
+    padding-top: 0;
+
+    &::before {
+      padding-bottom: 6px;
+    }
+  }
+
+  .promo__text{
+    width: auto;
+    padding: 0;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+
+  .promo__order {
+    justify-content: flex-start;
+  }
+}
