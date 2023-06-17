@@ -1,0 +1,27 @@
+.number {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 8px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $color-bdbdbd;
+  }
+}
+
+.number__input {
+  display: block;
+  width: 90px;
+  padding: 8px 9px;
+  background-color: $color-ffffff;
+  border: 2px solid $color-9070ec;
+  border-radius: 4px;
+  text-align: center;
+}
+

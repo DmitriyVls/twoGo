@@ -1,0 +1,37 @@
+.catalog {
+  background-color: $color-f8f8f8;
+}
+
+.catalog__content {
+  max-width: 280px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.catalog__wrapper {
+  padding-top: 20px;
+}
+
+.catalog__title {
+  margin: 0;
+  pa
+  &::before {
+    content: "Каталог";
+  }
+}
+
+@media (min-width:768px) {
+  .catalog__content {
+    max-width: 728px;
+  }
+}
+
+@media (min-width:1440px) {
+  .catalog__content {
+    max-width: 1360px;
+  }
+
+  .catalog__form {
+    max-width: 30%;
+  }
+}

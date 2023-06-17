@@ -1,0 +1,38 @@
+.range__wrapper {
+  padding-bottom: 50px;
+}
+
+.rande__scale {
+  width: 280px;
+  height: 4px;;
+  background-color: $color-e2e2e2;
+}
+
+.range__bar {
+  width: 250px;
+  height: 4px;;
+  position: relative;
+  background-color: $color-7859cf;
+
+}
+
+.range__toggle {
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  border: 2px solid $color-9070ec;
+  cursor: pointer;
+  position: absolute;
+  bottom: -10px;
+  background-color: $color-ffffff;
+}
+
+
+.range__toggle--right {
+  right: 0;
+}
+
+.range__toggle--left {
+  left: 0;
+}

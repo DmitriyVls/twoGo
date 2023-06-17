@@ -1,0 +1,32 @@
+.radio__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio__fake {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  border: 2px solid $color-bdbdbd;
+  margin-right: 10px;
+  position: relative;
+}
+
+.radio__input:checked + .radio__fake {
+  border: 2px solid $color-7859cf;
+
+  &::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-color: $color-7859cf;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100% ;
+  }
+}
+

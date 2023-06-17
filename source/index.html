@@ -5,6 +5,10 @@
     <title>Название проекта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat//Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
   </head>
   <svg style="display: none;"  xmlns="http://www.w3.org/2000/svg">
 
@@ -101,8 +105,6 @@
       <h1 class="visually-hidden">Интернет-магазин по продаже кофейных напитков Drink2Go.</h1>
 
       <section class="slider">
-        <h2 class="visually-hidden">Слайдер</h2>
-
         <div class="slider__wrapper">
           <div class="slider__page-one">
             <div class="slider__content promo ">
@@ -114,9 +116,9 @@
 
               <div class="promo__info">
                 <div class="promo__description">
-                  <h3 class="promo__main-title main-title title-apostrofe">
+                  <h2 class="promo__main-title main-title title-apostrofe">
                     Декаф Флэт Уайт
-                  </h3>
+                  </h2>
 
                   <p class="promo__text text">
                     Свежесваренный кофе без кофеина из Эфиопии
@@ -171,12 +173,11 @@
       </section>
 
       <section class="features">
-        <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="features__wrapper">
           <div class="features__content">
-            <h4 class="features__title title title-apostrofe">
+            <h3 class="features__title title title-apostrofe">
               Главные причины выбрать Drink2Go
-            </h4>
+            </h3>
 
             <ul class="features__list list">
 
@@ -251,137 +252,187 @@
       </section>
 
       <section class="catalog">
-        <h2 class="visually-hidden">
-          Каталог товаров
-        </h2>
-
         <div class="catalog__content">
-          <h3 class="catalog__title title">
+          <h3 class="catalog__title title title-apostrofe">
             Каталог кофейных напитков
           </h3>
 
-          <div class="catalog__form form">
-            <form action="#" method="get" class="form__content">
-              <fieldset class="form__fiekdset">
-                <legend class="form__legend ">
-                  Цена
-                </legend>
+          <div class="catalog__wrapper">
+            <div class="catalog__form form">
+              <form action="#" method="post" class="form__content">
+                <div class="form__wrapper">
+                  <fieldset class="form__fiekdset">
+                    <legend class="form__legend ">
+                      Цена
+                    </legend>
 
-                <div class="form__range range">
-                  <div class="rande__scale">
-                    <div class="range__bar">
-                      <button class="range__toggle"  type="button">
-                        <span class="visually-hidden">Изменить минимальную цену</span>
-                      </button>
+                    <div class="form__range range">
+                      <div class="range__wrapper">
+                        <div class="rande__scale">
+                          <div class="range__bar">
+                            <button class="range__toggle range__toggle--left"  type="button">
+                              <span class="visually-hidden">Изменить минимальную цену</span>
+                            </button>
 
-                      <button class="range__toggle"  type="button">
-                        <span class="visually-hidden">Изменить максимальную цену</span>
-                      </button>
+                            <button class="range__toggle range__toggle--right"  type="button">
+                              <span class="visually-hidden">Изменить максимальную цену</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="range__number number">
+                        <div class="number__wrapper number__min">
+                          <label class="number__label label" for="low-price"></label>
+                          <input class="number__input" type="number" value="0" id="low-price">
+                        </div>
+
+
+                        <div class="number__wrapper number__max">
+                          <label class="number__label label" for="high-price"></label>
+                          <input class="number__input" type="number" id="high-price" value="123">
+                        </div>
+
+                      </div>
                     </div>
-                  </div>
+                  </fieldset>
 
-                  <div class="range__number number">
-                    <label class="number__label label">
-                      <input class="number__input number__min" type="number" value="0">
-                    </label>
+                  <fieldset class="form__fiekdset">
+                    <legend class="form__legend">
+                      Наличие молока
+                    </legend>
 
-                    <label class="number__label label">
-                      <input class="number__input number__max" type="number" value="123">
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
+                    <ul class="form__list list" >
+                      <li class="form__item form__radio radio">
+                          <label  class="radio__label">
+                            <input type="radio" class="radio__input visually-hidden" name="milk" value="not-matter" checked>
+                            <span class="radio__fake"></span>
+                            <span class="radio__text">Неважно</span>
+                          </label>
+                      </li>
 
-              <fieldset class="form__fiekdset">
-                <legend class="form__legend">
-                  Наличие молока
-                </legend>
+                      <li class="form__item form__radio radio">
+                        <label  class="radio__label">
+                          <input type="radio" class="radio__input visually-hidden" name="milk"  value="only-animal">
+                          <span class="radio__fake"></span>
+                          <span class="radio__text">Только животное</span>
 
-                <ul class="form__list list" >
-                  <li class="form__item ">
-                    <div class="form__radio radio">
-                      <label for="radio-button" class="radio__label">Неважно</label>
-                      <input type="radio" class="visually-hidden" id="radio-button" value="not-matter">
-                    </div>
+                        </label>
+                    </li>
+
+                    <li class="form__item form__radio radio">
+                      <label  class="radio__label">
+                        <input type="radio" class="radio__input visually-hidden" name="milk" value="only-vegan">
+                        <span class="radio__fake"></span>
+                        <span class="radio__text">Только растительное</span>
+
+                      </label>
                   </li>
 
-                  <li class="form__item ">
-                    <div class="form__radio radio">
-                      <label for="radio-button" class="radio__label">Только животное</label>
-                      <input type="radio" class="visually-hidden" id="radio-button" value="animal-milk">
-                    </div>
-                  </li>
 
-                  <li class="form__item ">
-                    <div class="form__radio radio">
-                      <label for="radio-button" class="radio__label">Только растительное</label>
+                  <li class="form__item form__radio radio">
+                    <label  class="radio__label is-disabled">
+                      <input type="radio" class="radio__input visually-hidden" name="milk" value="no-milk" disabled>
                       <span class="radio__fake"></span>
-                      <input type="radio" class="visually-hidden" id="radio-button" value="vegetable-milk">
-                    </div>
-                  </li>
+                      <span class="radio__text">Без молока</span>
 
+                    </label>
+                </li>
 
-                  <li class="form__item ">
-                    <div class="form__radio radio">
-                      <label for="radio-button" class="radio__label">Без молока</label>
-                      <input type="radio" class="visually-hidden" id="radio-button" value="no-milk">
-                    </div>
-                  </li>
+                    </ul>
+                  </fieldset>
 
-                </ul>
+                  <fieldset class="form__fiekdset">
+                    <legend class="form__legend ">
+                      Страна произрастания
+                    </legend>
+                    <ul class="form__list list" >
+                      <li class="form__item form__checkbox checkbox">
+                          <label class="checkbox__label">
+                            <input type="checkbox" class="checkbox__input visually-hidden" name="county" value="Brazil" checked>
+                            <span class="checkbox__fake"></span>
+                            <span class="checkbox__text">Бразилия</span>
+                        </label>
+                      </li>
 
-                <ul class="form__list list" >
-                  <li class="form__item ">
-                    <div class="form__checkbox checkbox">
-                      <label for="checkbox" class="radio__label">Неважно</label>
-                      <input type="checkbox" class="visually-hidden" id="checkbox" value="not-matter">
-                    </div>
-                  </li>
-                </ul>
-              </fieldset>
+                      <li class="form__item" form__checkbox checkbox>
+                        <label class="checkbox__label">
+                          <input type="checkbox" class="checkbox__input visually-hidden" name="county"  value="Ethiopia">
+                          <span class="checkbox__fake"></span>
+                          <span class="checkbox__text">Эфиопия</span>
+                        </label>
 
-              <fieldset class="form__fiekdset">
-                <legend class="form__legend ">
-                  Страна произрастания
-                </legend>
-                <ul class="form__list list" >
-                  <li class="form__item">
-                    <div class="form__checkbox checkbox">
-                      <label for="checkbox" class="radio__label">Бразилия</label>
-                      <input type="checkbox" class="visually-hidden" id="checkbox" value="Brazil">
-                    </div>
-                  </li>
+                      </li>
 
-                  <li class="form__item">
-                    <div class="form__checkbox checkbox">
-                      <label for="checkbox" class="radio__label">Эфиопия</label>
-                      <input type="checkbox" class="visually-hidden" id="checkbox" value="Ethiopia">
-                    </div>
-                  </li>
+                      <li class="form__item form__checkbox checkbox">
+                        <label class="checkbox__label">
+                          <input type="checkbox" class="checkbox__input visually-hidden" name="county"  value="Colombia">
+                          <span class="checkbox__fake"></span>
+                          <span class="checkbox__text">Колумбия</span>
+                        </label>
+                      </li>
 
-                  <li class="form__item">
-                    <div class="form__checkbox checkbox">
-                      <label for="checkbox" class="radio__label">Колумбия</label>
-                      <input type="checkbox" class="visually-hidden" id="checkbox" value="Colombia">
-                    </div>
-                  </li>
+                      <li class="form__item form__checkbox checkbox">
+                          <label class="checkbox__label">
+                            <input type="checkbox" class="checkbox__input visually-hidden" name="county"  value="Costa-Rica">
+                            <span class="checkbox__fake"></span>
+                            <span class="checkbox__text">Коста-Рика</span>
+                          </label>
+                      </li>
 
-                  <li class="form__item">
-                    <div class="form__checkbox checkbox">
-                      <label for="checkbox" class="radio__label">Коста-Рика</label>
-                      <input type="checkbox" class="visually-hidden" id="checkbox" value="Costa-Rica">
-                    </div>
-                  </li>
+                      <li class="form__item">
+                        <label class="checkbox__label is-disabled">
+                          <input type="checkbox" class="checkbox__input visually-hidden" name="county"  value="Peru" disabled>
+                          <span class="checkbox__fake"></span>
+                          <span class="checkbox__text">Перу</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
 
-                  <li class="form__item">
-                    <div class="form__checkbox checkbox">
-                      <label for="checkbox" class="radio__label">Перу</label>
-                      <input type="checkbox" class="visually-hidden" id="checkbox" value="Peru">
-                    </div>
-                  </li>
-                </ul>
-              </fieldset>
-            </form>
+                <div class="form__buttons">
+                  <button class="form__button button" type="button">Применить</button>
+                  <button class="form__button form__button--reset button" type="reset">Сбросить</button>
+
+                </div>
+              </form>
+            </div>
+
+            <div class="catalog__product-card product-card">
+              <ul class="product-card__list list">
+                <li class="product-card__item">
+                    <picture class="product-card__picture">
+                      <img src="" alt="Изображение товара.">
+                    </picture>
+
+                    <a href="#" class="product-card__link">
+
+                      <div class="product-card__description">
+                        <h4 class="product-card__title small-title">
+                          Декаф Флэт Уайт
+                        </h4>
+
+                        <p class="product-card__text">
+                          Кофе без кофеина из Эфиопии
+                          с натуральным фермерским молоком
+                        </p>
+                      </div>
+                    </a>
+
+                  <div class="product-card__price price">
+
+                    <p class="product-card__actual rice__actual">
+                      225&#8381;
+                    </p>
+
+                    <button class="product-card__button button" type="button">
+                      В корзину
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
