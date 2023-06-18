@@ -19,7 +19,7 @@
   }
 }
 
-.slider__content  {
+.slider__content {
   max-width: calc(100% - 40px);
   margin: 0 auto;
   position: relative;
@@ -39,6 +39,7 @@
 }
 
 .slider__button {
+
   background-color: inherit;
   border: none;
   cursor: pointer;
@@ -50,20 +51,17 @@
 }
 
 //TABLET
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .slider__content {
     display: flex;
     flex-direction: column-reverse;
   }
 }
+
 //TABLET
 
 //DESCTOP
-@media (min-width:1440px) {
-  .slider__wrapper {
-  }
-
-
+@media (min-width: 1440px) {
   .slider__content {
     flex-direction: row;
     min-height: 714px;
@@ -71,7 +69,7 @@
     margin: 0 auto;
   }
 
-  .slider__dots{
+  .slider__dots {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -90,27 +88,25 @@
     cursor: pointer;
     position: relative;
 
-      &:last-child {
-        margin-right: 0;
-      }
+    &:last-child {
+      margin-right: 0;
+    }
 
-      &::after{
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: $color-ffffff;
-        top: 8px;
-        left: 0;
-
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: $color-ffffff;
+      top: 8px;
+      left: 0;
+    }
   }
 }
 
 .slider__dot--current {
-
   &::after {
     background-color: $color-7859cf;
   }
 }
-//DESCTOP
+//DESKTOP

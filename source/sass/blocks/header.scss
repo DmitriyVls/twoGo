@@ -6,15 +6,14 @@
   z-index: 5;
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .header__logo {
     display: flex;
     align-items: center;
 
-      &::after {
-        width: 120px;
-        padding-left: 20px;
-
-      }
+    &::after {
+      width: 120px;
+      padding-left: 20px;
+    }
   }
 }

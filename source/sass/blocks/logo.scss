@@ -4,32 +4,28 @@
 }
 
 //TABLET
-@media (min-width:768px) {
-
+@media (min-width: 768px) {
   .logo {
     flex-grow: 0;
   }
-
 }
 //TABLET
 
-
 //DESKTOP
-  @media (min-width:1440px) {
-    .logo {
-      padding-left: 40px;
+@media (min-width: 1440px) {
+  .logo {
+    padding-left: 40px;
 
-      &::after {
-        content: "Интернет магазин кофейных напитков";
-        font-family: "Montserrat";
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 16px;
-        color: $color-333333;
-      }
+    &::after {
+      content: "Интернет магазин кофейных напитков";
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $color-333333;
     }
-
   }
+}
 
 
 //DESCTOP

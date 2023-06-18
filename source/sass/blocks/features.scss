@@ -26,7 +26,7 @@
   margin: 0;
 
   &::before {
-    content:" Преимущества";
+    content: "Преимущества";
   }
 }
 
@@ -42,7 +42,7 @@
 }
 
 //TABLET
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .features__list {
     max-width: 768px;
     margin: 0 auto;
@@ -81,7 +81,7 @@
 //TABLET
 
 //DESKTOP
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .features__list {
     max-width: calc(1440px - 80px);
     justify-content: start;
