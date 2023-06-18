@@ -1,6 +1,5 @@
 .promo__description {
   padding-top: 10px;
-
 }
 
 .promo__picture {
@@ -13,6 +12,7 @@
   margin: 0;
   padding-top: 4px;
   padding-bottom: 10px;
+
   &::before {
     content: "Новинка!";
   }
@@ -38,7 +38,7 @@
   padding-left: 8px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .promo__description {
     order: 1;
     padding-top: 60px;
@@ -57,10 +57,9 @@
   .promo__picture {
     padding-top: 20px;
   }
-
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .promo__info {
     text-align: left;
     align-items: stretch;
@@ -85,7 +84,7 @@
     }
   }
 
-  .promo__text{
+  .promo__text {
     width: auto;
     padding: 0;
     padding-bottom: 40px;

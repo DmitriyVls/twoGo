@@ -7,7 +7,6 @@
   align-items: center;
   margin-bottom: 23px;
   padding-right: 20px;
-
 }
 
 .footer__container {
@@ -44,15 +43,13 @@
 }
 
 //TABLET
-@media (min-width:768px) {
-
+@media (min-width: 768px) {
   .footer__wrapper {
     justify-content: space-between;
   }
 
   .footer__info {
     display: flex;
-
   }
 
   .footer__container {
@@ -65,9 +62,7 @@
   }
 }
 //TABLET
-
-@media (min-width:1440px) {
-
+@media (min-width: 1440px) {
   .footer {
     display: flex;
     align-items: stretch;
@@ -89,7 +84,6 @@
 
   .footer__container {
     flex-basis: 25%;
-
   }
 
   .footer__logo {

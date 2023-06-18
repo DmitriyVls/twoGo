@@ -14,19 +14,39 @@
 
 .catalog__title {
   margin: 0;
-  pa
+
   &::before {
     content: "Каталог";
   }
 }
 
-@media (min-width:768px) {
+.catalog__sort {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.catalog__semi-bold-text {
+  margin: 0;
+  padding-right: 18px;
+}
+
+.product-card__button {
+  width: 141px;
+  font-size: 14px;
+  line-height: 20px;
+  background-image: url("/img/product-card-basket.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
+
+@media (min-width: 768px) {
   .catalog__content {
     max-width: 728px;
   }
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .catalog__content {
     max-width: 1360px;
   }
