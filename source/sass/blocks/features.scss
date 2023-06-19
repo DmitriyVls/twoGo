@@ -27,6 +27,7 @@
 
   &::before {
     content: "Преимущества";
+    padding-bottom: 5px;
   }
 }
 
@@ -34,6 +35,8 @@
   display: block;
   text-align: center;
   padding-top: 10px;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .features__text {

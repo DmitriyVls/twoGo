@@ -17,11 +17,13 @@
 
 .number__input {
   display: block;
-  width: 90px;
-  padding: 8px 9px;
+  width: 95px;
+  padding: 6px 9px;
   background-color: $color-ffffff;
   border: 2px solid $color-9070ec;
   border-radius: 4px;
+  font-size: inherit;
+  line-height: 24px;
   text-align: center;
   outline: none;
   appearance: textfield;

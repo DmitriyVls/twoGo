@@ -1,6 +1,7 @@
 .slider__wrapper {
   position: relative;
   z-index: 1;
+  padding-top: 14px;
 }
 
 .slider__page {
@@ -52,7 +53,7 @@
   top: 0;
   position: absolute;
   z-index: 1;
-  margin: 0 2%;
+  margin: 0 ;
 }
 
 .slider__button {

@@ -1,5 +1,5 @@
 .range__wrapper {
-  padding-bottom: 50px;
+  padding-bottom: 33px;
 }
 
 .rande__scale {
@@ -9,7 +9,7 @@
 }
 
 .range__bar {
-  width: 250px;
+  width: 260px;
   height: 4px;
   position: relative;
   background-color: $color-7859cf;
@@ -17,8 +17,8 @@
 
 .range__toggle {
   display: block;
-  width: 21px;
-  height: 21px;
+  width: 23px;
+  height: 23px;
   border-radius: 100%;
   border: 2px solid $color-9070ec;
   cursor: pointer;
