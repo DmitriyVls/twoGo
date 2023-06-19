@@ -29,3 +29,24 @@
     border-radius: 100%;
   }
 }
+
+.radio__input:hover + .radio__fake,
+.radio__input:focus + .radio__fake {
+  &::after {
+    background: rgba(120, 89, 207, 0.25);
+  }
+}
+
+.radio__input:checked + .radio__fake--disabled {
+  background-color: $color-e2e2e2;
+
+  &::after {
+    background-color: $color-bdbdbd;
+  }
+}
+
+.radio__input:hover + .radio__fake--disabled,
+.radio__input:focus + .radio__fake--disabled {
+  cursor: default;
+  background-color: $color-e2e2e2;
+}

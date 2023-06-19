@@ -23,4 +23,15 @@
   border: 2px solid $color-9070ec;
   border-radius: 4px;
   text-align: center;
+  outline: none;
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &:focus-visible {
+    border-color: $color-593cac;
+  }
 }

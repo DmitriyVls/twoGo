@@ -1,5 +1,10 @@
 .burger {
+  display: block;
   padding-right: 20px;
+}
+
+.burger--no-js {
+  display: none;
 }
 
 .burger__link-button {
@@ -76,11 +81,6 @@
     bottom: 29px;
     left: 25px;
   }
-}
-
-.burger--no-js {
-  visibility: hidden;
-  opacity: 0;
 }
 
 @media (min-width: 768px) {

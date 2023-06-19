@@ -1,0 +1,35 @@
+.map {
+  width: 100%;
+  min-width: 280px;
+  min-height: 420px;
+  position: relative;
+  background-image: url("/img/png/map/map-mobile@1x");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/png/map/map-mobile@2x");
+  }
+}
+
+@media (min-width: 768px) {
+  map {
+    background-image: url("/img/png/map/map-tablet@1x");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/png/map/map-tablet@2x");
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  map {
+    background-image: url("/img/png/map/map-desktop@1x");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/png/map/map-desktop@2x");
+    }
+  }
+}

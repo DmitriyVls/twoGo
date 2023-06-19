@@ -1,6 +1,6 @@
 .form__fiekdset {
   margin: 0;
-  padding: 0 20;
+  padding: 0;
   padding-top: 20px;
   padding-bottom: 30px;
   border: none;
@@ -34,6 +34,12 @@
 .form__button--reset {
   background-color: $color-ffffff;
   color: $color-7859cf;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: $color-ffffff;
+  }
 }
 
 @media (min-width: 768px) {
@@ -58,6 +64,11 @@
 @media (min-width: 1440px) {
   .form__wrapper {
     flex-direction: column;
+  }
+
+  .form__fiekdset {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form__buttons {

@@ -42,15 +42,35 @@
   padding: 0 20px;
 }
 
+.product-card__button {
+  width: 141px;
+  font-size: 14px;
+  line-height: 20px;
+  background-image: url("/img/product-card-basket.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
+
 @media (min-width: 768px) {
   .product-card__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(349px, auto));
+    gap: 0 30px;
   }
 
   .product-card__item {
-    flex-basis: 45%;
-    flex-grow: 1;
+    max-width: 349px;
+  }
+
+  .product-card__text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .product-card__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 30px;
   }
 }

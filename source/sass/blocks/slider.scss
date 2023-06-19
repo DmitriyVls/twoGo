@@ -1,10 +1,10 @@
 .slider__wrapper {
   position: relative;
   z-index: 1;
-  min-height: 640px;
 }
 
-.slider__page-one {
+.slider__page {
+  display: none;
   position: relative;
   min-height: 640px;
   z-index: -1;
@@ -13,9 +13,30 @@
     content: "";
     position: absolute;
     width: 100%;
-    min-height: 100%;
-    background-color: $color-f3ebe1;
+    min-height: 640px;
     z-index: -1;
+  }
+}
+
+.slider__page--active {
+  display: block;
+}
+
+.slider__page-one {
+  &::before {
+    background-color: $color-f3ebe1;
+  }
+}
+
+.slider__page-two {
+  &::before {
+    background-color: $color-eae6fc;
+  }
+}
+
+.slider__page-three {
+  &::before {
+    background-color: $color-e5e6e8;
   }
 }
 
@@ -34,29 +55,60 @@
   margin: 0 2%;
 }
 
-.slider__control--right {
-  right: 0;
-}
-
 .slider__button {
-
   background-color: inherit;
   border: none;
   cursor: pointer;
   height: 100%;
+  outline: none;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+.slider__control--left {
+  &:hover,
+  &:focus-visible {
+    background: linear-gradient(90deg, $color-ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
+
+.slider__control--right {
+  right: 0;
+
+  &:hover,
+  &:focus-visible {
+    background: linear-gradient(-90deg, $color-ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
 }
 
 .slider__dots {
   display: none;
 }
-
 //TABLET
 @media (min-width: 768px) {
   .slider__content {
     display: flex;
     flex-direction: column-reverse;
+
+    .slider__page {
+      &::before {
+        height: 640px;
+      }
+    }
   }
 }
+
 
 //TABLET
 
@@ -69,6 +121,12 @@
     margin: 0 auto;
   }
 
+  .slider__page {
+    &::before {
+      height: 100%;
+    }
+  }
+
   .slider__dots {
     width: 100%;
     display: flex;
@@ -79,6 +137,7 @@
   }
 
   .slider__dot {
+
     width: 62px;
     max-height: 4px;
     padding: 10px 0;
@@ -87,6 +146,7 @@
     background-color: inherit;
     cursor: pointer;
     position: relative;
+    outline: none;
 
     &:last-child {
       margin-right: 0;
@@ -101,6 +161,13 @@
       top: 8px;
       left: 0;
     }
+
+    &:hover,
+    &:focus {
+      &::after {
+        background: rgba(120, 89, 207, 0.25);
+      }
+    }
   }
 }
 
@@ -109,4 +176,5 @@
     background-color: $color-7859cf;
   }
 }
+
 //DESKTOP

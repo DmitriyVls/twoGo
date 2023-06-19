@@ -1,6 +1,7 @@
 .user-list {
   display: flex;
   align-items: center;
+  min-height: 60px;
 }
 
 .user-list__link {
@@ -25,14 +26,33 @@
 
 .user-list__login {
   background-image: url("/img/user.svg");
+
+  &:hover,
+  &:focus-visible {
+    background-image: url("/img/login-hover.svg");
+
+    .user-list__text {
+      color: $color-7859cf;
+    }
+  }
 }
 
 .user-list__basket {
   background-image: url("/img/basket.svg");
+
+  &:hover,
+  &:focus-visible {
+    background-image: url("/img/basket-hover.svg");
+
+    .user-list__text {
+      color: $color-7859cf;
+    }
+  }
 }
 
 .user-list__text {
   display: none;
+  color: inherit;
 }
 
 //TABLET
@@ -45,6 +65,7 @@
     padding: 33px 30px;
   }
 }
+
 //TABLET
 
 //DESKTOP
@@ -65,4 +86,5 @@
     text-transform: uppercase;
   }
 }
+
 //DESKTOP
