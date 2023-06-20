@@ -93,6 +93,22 @@
   .product-card__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0 30px;
+    gap: 10px 55px;
+  }
+
+  .product-card__title {
+    padding-top: 50px;
+  }
+
+  .product-card {
+    padding-right: 30px;
+  }
+
+  .product-card__price-wrapper {
+    padding: 0 15px;
+  }
+
+  .pagination__item {
+    margin-right: 40px;
   }
 }

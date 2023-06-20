@@ -90,3 +90,14 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .pagination__wrapper {
+    max-width: 450px;
+    padding-top: 40px;
+    margin-left: auto;
+  }
+
+  .pagination__list {
+  }
+}
+
