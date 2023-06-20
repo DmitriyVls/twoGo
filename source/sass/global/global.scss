@@ -137,11 +137,13 @@ a {
 
 .social-svg {
   fill: $color-bdbdbd;
+  stroke: $color-bdbdbd;
 
   &:hover,
   &:focus,
   &:active {
     fill: $color-7859cf;
+    stroke: $color-7859cf;
   }
 }
 

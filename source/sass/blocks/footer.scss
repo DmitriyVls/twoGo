@@ -33,6 +33,22 @@
   text-align: left;
   padding: 12px 0;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $color-7859cf;
+  }
+
+  &:active {
+    background-color: $color-9070ec;
+  }
+}
+
+.footer__phone,
+.footer__adress {
+  padding-left: 20px;
+  background-position: 0;
+  background-repeat: no-repeat;
 }
 
 .footer__adress {
@@ -40,16 +56,6 @@
   font-size: 14px;
   text-transform: none;
   padding-top: 25px;
-}
-
-.footer__phone,
-.footer__adress {
-  padding-left: 20px;
-  background-position: 0 ;
-  background-repeat: no-repeat;
-}
-
-.footer__adress {
   background-image: url("/img/point.svg");
 }
 
@@ -82,7 +88,6 @@
   &:active {
     color: $color-593cac;
     background-image: url("/img/academy-active.svg");
-
   }
 }
 
@@ -140,7 +145,7 @@
 
   .footer__info {
     justify-content: space-between;
-    flex-grow:0;
+    flex-grow: 0;
     padding-left: 30px;
   }
 
@@ -156,6 +161,7 @@
 
   .footer__logo {
     margin-right: 0;
+
     &::after {
       display: block;
       padding-top: 10px;
@@ -165,7 +171,7 @@
     }
   }
 
-  .footer__adress  {
+  .footer__adress {
     max-width: none;
     margin-right: 0;
   }
