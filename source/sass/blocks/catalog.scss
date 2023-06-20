@@ -66,6 +66,8 @@
 @media (min-width: 768px) {
   .catalog__content {
     max-width: 728px;
+    padding-top: 80px;
+    padding-bottom: 55px;
   }
 
   .catalog__sort {
@@ -81,6 +83,8 @@
 @media (min-width: 1440px) {
   .catalog__content {
     max-width: 1360px;
+    padding-top: 120px;
+    padding-bottom: 90px;
   }
 
   .catalog__wrapper {
@@ -89,6 +93,6 @@
   }
 
   .catalog__form {
-    max-width: 317px;
+    width: 317px;
   }
 }

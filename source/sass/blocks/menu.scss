@@ -88,3 +88,14 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .menu {
+    justify-content: flex-start;
+    margin-left: 110px;
+  }
+
+  .menu__link{
+    min-width: 82px;
+  }
+}

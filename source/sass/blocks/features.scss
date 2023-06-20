@@ -1,5 +1,5 @@
 .features__wrapper {
-  padding-top: 50px;
+  padding-top: 64px;
   padding-bottom: 60px;
 }
 
@@ -46,6 +46,10 @@
 
 //TABLET
 @media (min-width: 768px) {
+  .features__wrapper {
+    padding-top: 42px;
+  }
+
   .features__list {
     max-width: 768px;
     margin: 0 auto;
@@ -53,32 +57,37 @@
     justify-content: center;
     gap: 0 30px;
     flex-wrap: wrap;
+    padding-top: 47px;
   }
 
   .features__item {
     max-width: 339px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
 
     &:last-child {
-      padding-bottom: 50px;
+      padding-bottom: 35px;
     }
   }
 
   .features__picture {
     display: block;
+    padding-top: 13px;
     padding-right: 20px;
   }
 
   .features__bold-text {
+    font-size: 24px;
     text-align: left;
   }
 
   .features__text {
+    max-width: 267px;
     font-size: 16px;
     text-align: left;
-    max-width: 267px;
+    padding-top: 17px;
+    line-height: 24px;
   }
 }
 
@@ -86,9 +95,15 @@
 
 //DESKTOP
 @media (min-width: 1440px) {
+  .features__wrapper {
+    padding-top: 87px;
+  }
+
+
   .features__list {
     max-width: calc(1440px - 80px);
     justify-content: start;
+    padding-top: 80px;
     gap: 0 30px;
   }
 
@@ -103,6 +118,7 @@
 
   .features__bold-text {
     text-align: center;
+    padding-top: 20px;
   }
 
   .features__text {

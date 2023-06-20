@@ -15,7 +15,7 @@
 }
 
 @media (min-width: 768px) {
-  map {
+  .map {
     background-image: url("/img/png/map/map-tablet@1x");
 
     @media (min-resolution: 2dppx) {
@@ -25,7 +25,8 @@
 }
 
 @media (min-width: 1440px) {
-  map {
+  .map {
+    min-height: 512px;
     background-image: url("/img/png/map/map-desktop@1x");
 
     @media (min-resolution: 2dppx) {

@@ -50,7 +50,15 @@
   .form__wrapper {
     display: flex;
     align-items: start;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .form__fiekdset {
+    padding-right: 30px;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   .form__buttons {
@@ -58,6 +66,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding-top: 15px;
   }
 
   .form__button {
@@ -73,6 +82,13 @@
   .form__fiekdset {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+
+  .form__legend {
+    display: block;
+    padding-top: 17px;
   }
 
   .form__buttons {
@@ -80,5 +96,9 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
+  }
+
+  .form__range {
+    max-width: 317px;
   }
 }

@@ -71,3 +71,31 @@
 .range__toggle--left {
   left: 0;
 }
+
+//TABLET
+@media (min-width: 768px) {
+  .rande__scale {
+    width: 223px;
+  }
+
+  .range__bar {
+    width: 200px;
+  }
+}
+//TABLET
+
+//DESK
+@media (min-width: 1440px) {
+  .range__wrapper {
+    padding-top: 0;
+  }
+
+  .rande__scale {
+    width: 318px;
+  }
+
+  .range__bar {
+    width: 274px;
+  }
+}
+//DESK

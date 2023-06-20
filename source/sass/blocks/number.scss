@@ -37,3 +37,15 @@
     border-color: $color-593cac;
   }
 }
+
+@media (min-width: 768px) {
+  .number__input {
+    width: 65px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .number__input {
+    width: 107px;
+  }
+}

@@ -69,10 +69,23 @@
 
   .product-card__item {
     max-width: 349px;
+    padding-left: 10px;
+    margin-bottom: 35px;
+  }
+
+  .product-card__title {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 58px;
   }
 
   .product-card__text {
     font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  .product-card__button {
+    width: 150px;
   }
 }
 

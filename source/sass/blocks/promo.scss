@@ -41,17 +41,23 @@
 @media (min-width: 768px) {
   .promo__description {
     order: 1;
-    padding-top: 60px;
-  }
-
-  .promo__text {
-    max-width: 608px;
-    margin: 0 auto;
+    padding-top: 30px;
   }
 
   .promo__main-title {
     padding-top: 16px;
     padding-bottom: 16px;
+
+    &::before {
+      padding-bottom: 15px;
+    }
+  }
+
+  .promo__text {
+    max-width: 590px;
+    margin: 0 auto;
+    padding-top: 22px;
+    line-height: 32px;
   }
 
   .promo__picture {
@@ -71,8 +77,9 @@
 
   .promo__picture {
     width: auto;
-    padding-top: 0;
+    padding-top: 5px;
     padding-right: 30px;
+    padding-left: 100px;
   }
 
   .promo__main-title {
@@ -84,10 +91,21 @@
     }
   }
 
+  .promo__description {
+    padding-top: 170px;
+  }
+
+  .promo__main-title {
+    &::before {
+      padding-bottom: 14px;
+    }
+  }
+
   .promo__text {
     width: auto;
     padding: 0;
-    padding-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 45px;
     text-align: left;
   }
 

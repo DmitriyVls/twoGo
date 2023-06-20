@@ -10,9 +10,10 @@
   .header__logo {
     display: flex;
     align-items: center;
+    position: relative;
 
     &::after {
-      width: 120px;
+      width: 180px;
       padding-left: 20px;
     }
   }
